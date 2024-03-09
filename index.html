@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="filters">
+            <img id="brighten_enhance" src="img/sun-fill.svg" alt="Aclarir y Enfosquir">
+            <img id="grayscale" src="img/image.svg" alt="Escala de Grisos">
+            <img id="negative" src="img/dash-circle.svg" alt="Negatiu">
+            <img id="mirror_horizontal" src="img/square-half.svg" alt="Mirall Horitzontal">
+            <img id="sepia" src="img/camera-reels.svg" alt="Sepia">
+            <img id="pixelate" src="img/boxes.svg" alt="Pixelate">
+            <img id="clear_canvas" src="img/trash3-fill.svg" alt="Netellar el Canvas">
+            <img id="save_canvas_content" src="img/arrow-down-circle.svg"
+                alt="Desar el contingut del Canvas a un Arxiu">
+        </div>
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <input type="range" id="brightnessRange" min="-195" max="195" value="0">
+        <div class="thumbnails">
+            <img class="thumbnail" src="img/el-guernica.jpg" alt="Thumbnail 1">
+            <img class="thumbnail" src="img/grito.jpg" alt="Thumbnail 2">
+            <img class="thumbnail" src="img/la-gran-ola-de-kanagawa.jpg" alt="Thumbnail 3">
+            <img class="thumbnail" src="img/la-noche-estrellada.jpg" alt="Thumbnail 4">
+        </div>
+        <input type="file" id="uploadInput" style="display: none;">
+        <button id="uploadButton">Cargar Imagen</button>
+    </div>
+</body>
+
+</html>
